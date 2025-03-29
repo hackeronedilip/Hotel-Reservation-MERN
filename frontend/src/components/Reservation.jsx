@@ -18,7 +18,7 @@ const Reservation = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:4000/reservation/send",
+        "http://13.218.40.203:5555/reservation/send",
         { firstName, lastName, email, phone, date, time },
         {
           headers: {
