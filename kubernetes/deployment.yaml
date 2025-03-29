@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: my-node-app
-          image: dilipopseng/game:latest
+          image: dilipopseng/hp:latest
           ports:
             - containerPort: 5555
           env:
