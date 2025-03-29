@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: my-node-app
-          image: dilipopseng/backend1:latest
+          image: dilipopseng/backend3:latest
           ports:
             - containerPort: 5555
           env:
@@ -27,7 +27,7 @@ spec:
               valueFrom:
                 secretKeyRef:
                   name: my-app-secret
-                  key: DB_USER
+                  key: DB_USERs
             - name: DB_PASSWORD
               valueFrom:
                 secretKeyRef:
