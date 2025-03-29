@@ -1,28 +1,26 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: my-node-app
+  name: my-app
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: my-node-app
+      app: my-app
   template:
     metadata:
       labels:
-        app: my-node-app
+        app: my-app
     spec:
       containers:
-        - name: my-node-app
+        - name: my-app
           image: dilipopseng/hp:latest
-          ports:
-            - containerPort: 5555
           env:
-            - name: MONGO_URI
+            - name: PORT
               valueFrom:
                 configMapKeyRef:
                   name: my-app-config
-                  key: MONGO_URI
+                  key: PORT
             - name: DB_USER
               valueFrom:
                 secretKeyRef:
@@ -33,3 +31,8 @@ spec:
                 secretKeyRef:
                   name: my-app-secret
                   key: DB_PASSWORD
+            - name: MONGO_URI
+              valueFrom:
+                configMapKeyRef:
+                  name: my-app-config
+                  key: MONGO_URI
