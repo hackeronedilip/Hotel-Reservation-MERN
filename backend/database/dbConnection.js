@@ -6,9 +6,10 @@ export const dbConnection = () => {
       dbName: "RESERVATIONS",
     })
     .then(() => {
-      console.log("Connected to database!");
-    })
+      console.log(`Connecting to database at: ${mongoUri}`);    })
     .catch((err) => {
       console.log(`Some error occured while connecing to database: ${err}`);
     });
 };
+
+
