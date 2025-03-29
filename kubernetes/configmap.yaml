@@ -5,4 +5,4 @@ metadata:
 data:
   PORT: "5555"
   NODE_ENV: "production"
-  MONGO_URI: "mongodb+srv://admin:$(DB_PASSWORD)@devopsdilip.dudrh.mongodb.net/?retryWrites=true&w=majority&appName=DevopsDilip"
+  MONGO_URI: "mongodb+srv://$(DB_USER):$(DB_PASSWORD)@devopsdilip.dudrh.mongodb.net/?retryWrites=true&w=majority&appName=DevopsDilip"
