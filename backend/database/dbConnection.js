@@ -8,7 +8,7 @@ export const dbConnection = () => {
     .then(() => {
       console.log(`Connecting to database at: ${mongoUri}`);    })
     .catch((err) => {
-      console.log(`Some error occured while connecing to database: ${err}`);
+      console.log(`Some error occured while connecing to database: ${mongoUri}`);
     });
 };
 
