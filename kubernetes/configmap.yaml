@@ -4,4 +4,4 @@ metadata:
   name: my-app-config
 data:
   PORT: "5555"
-  MONGO_URI: "mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@devopsdilip.dudrh.mongodb.net/?retryWrites=true&w=majority&appName=DevopsDilip"
+  MONGO_URI: "mongodb+srv://$(DB_USER):$(DB_PASSWORD)@devopsdilip.dudrh.mongodb.net/?retryWrites=true&w=majority&appName=DevopsDilip"
