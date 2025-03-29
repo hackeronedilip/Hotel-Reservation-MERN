@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: my-node-app
-          image: dilipopseng/backend3:latest
+          image: dilipopseng/backend3
           ports:
             - containerPort: 5555
           env:
