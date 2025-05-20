@@ -3,5 +3,5 @@ kind: ConfigMap
 metadata:
   name: my-app-config
 data:
-  PORT: "5555"
+  PORT: "4444"
   MONGO_URI: "mongodb+srv://admin:admin@devopsdilip.dudrh.mongodb.net/?retryWrites=true&w=majority&appName=DevopsDilip"
